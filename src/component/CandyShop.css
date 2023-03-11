@@ -1,0 +1,77 @@
+.candy-shop {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:rgb(236, 197, 146);
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-icon {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .candy-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .candy-item {
+    background-color:yellowgreen;
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .candy-item h2 {
+    margin-top: 0;
+  }
+  
+  .cart {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 10%;
+    background-color: rgb(223, 214, 223);
+    border-left: 4px solid blueviolet;
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart.open {
+    transform: translateX(0%);
+  }
+  
+  .cart h2 {
+    margin-top: 0;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid rgb(150, 26, 26);
+    padding: 0.5rem 0;
+  }
+  
+  .cart-item h3 {
+    margin-top: 0;
+  }
+  
+  .cart-item button {
+    margin-left: 1rem;
+    background-color: #ce4a4a;
+    border: 1px solid #5bacae;
+    border-radius: 5px;
+    cursor: pointer;
+  }
